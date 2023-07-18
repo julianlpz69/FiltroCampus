@@ -16,7 +16,7 @@
   "Ciudades": [
     {
       "nomCiudad": "Bucaramanga",
-      "DepartamentoId": 1,
+      "DepartamentoId": "1",
       "imagen": "https://www.semana.com/resizer/87Kwhv09eyBDx-yjod_uTuN2KcY=/1280x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/BEBK2OBCFJD2TB2BQSHJT2FU6M.jpg",
       "coordenadas": {
         "lat": "7.12539",

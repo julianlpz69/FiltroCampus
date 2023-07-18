@@ -338,7 +338,7 @@ window.editarCiudad = async function(id){
     const latitud = document.getElementById("datoLatitucEditar");
     const longitud = document.getElementById("datoLongitudEditar");
     
-    const id2 =ciudad.departamentoId
+    let id2 =ciudad.DepartamentoId
     
     nombre.value = ciudad.nomCiudad
     link.value = ciudad.imagen
@@ -352,8 +352,7 @@ window.editarCiudad = async function(id){
       e.preventDefault();
     
     
-      let data = {"nomCiudad": `${nombre.value}`, "departamentoId": `${id2}`, "imagen": `${link.value}`,"coordenadas": { "lat": `${latitud.value}`, "lon": `${longitud.value}`}}
-      data.departamentoId = id2
+      let data = {"nomCiudad": `${nombre.value}`, "DepartamentoId": `${id2}`, "imagen": `${link.value}`,"coordenadas": { "lat": `${latitud.value}`, "lon": `${longitud.value}`}}
       actualizarPuto(data,id)
       $('#editarCiudad').modal('hide')
     })
