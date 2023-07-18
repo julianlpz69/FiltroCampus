@@ -1,0 +1,68 @@
+{
+  "Departamentos": [
+    {
+      "nomDepartamento": "Santander",
+      "id": 1
+    },
+    {
+      "nomDepartamento": "Cundinamarca",
+      "id": 2
+    },
+    {
+      "nomDepartamento": "Antoquia",
+      "id": 3
+    }
+  ],
+  "Ciudades": [
+    {
+      "nomCiudad": "Bucaramanga",
+      "DepartamentoId": 1,
+      "imagen": "https://www.semana.com/resizer/87Kwhv09eyBDx-yjod_uTuN2KcY=/1280x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/BEBK2OBCFJD2TB2BQSHJT2FU6M.jpg",
+      "coordenadas": {
+        "lat": "7.12539",
+        "lon": "-73.1198"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nomCiudad": "Barrancabermeja",
+      "DepartamentoId": 1,
+      "imagen": "https://www.vanguardia.com/binrepository/716x477/0c0/0d0/none/12204/COTD/panoramica-barrancabermeja-2-2798232-20190508152844_3590572_20190925162028.jpg",
+      "coordenadas": {
+        "lat": 7.06528,
+        "lon": -73.85472
+      }
+    },
+    {
+      "id": 3,
+      "nomCiudad": "Bogotá",
+      "DepartamentoId": 2,
+      "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/infobae/JAAYCWLOQRHOTKSLAZAH37REYM.jpeg",
+      "coordenadas": {
+        "lat": 4.60971,
+        "lon": -74.08175
+      }
+    },
+    {
+      "id": 4,
+      "nomCiudad": "Cajicá",
+      "DepartamentoId": 2,
+      "imagen": "https://www.ciencuadras.com/blog/wp-content/uploads/2022/01/760x501_cajica.jpg",
+      "coordenadas": {
+        "lat": 4.917,
+        "lon": -74.017
+      }
+    },
+    {
+      "nomCiudad": "Medellin",
+      "DepartamentoId": "3",
+      "imagen": "https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/medellin/Plaza-Botero-y-el-centro-de-Medellin-800.jpg",
+      "coordenadas": {
+        "lat": "6.2518400",
+        "lon": "-75.5635900"
+      },
+      "id": 5
+    }
+  ]
+}

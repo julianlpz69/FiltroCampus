@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+:root{
+    --body-color: #eff0f1 !important;
+    --sidebar-color: #FFF !important;
+    --primary-color: #232424 !important;
+    --primary-color-light: #f0f0f1 !important;
+    --toggle-color: #b4adad !important;
+    --text-color: #444343 !important;
+
+    --tran-03: all 0.2s ease !important;
+    --tran-03: all 0.3s ease !important;
+    --tran-04: all 0.3s ease !important;
+    --tran-05: all 0.3s ease !important;
+}
+
+
+
+body{
+    min-height: 100vh !important;
+    background-color: var(--body-color) !important;
+    transition: var(--tran-05) !important;
+}
+
+::selection{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+body.dark{
+    --body-color: #18191a !important;
+    --sidebar-color: #242526 !important;
+    --primary-color: #3a3b3c !important;
+    --primary-color-light: #3a3b3c !important;
+    --toggle-color: #fff !important;
+    --text-color: #ccc !important;
+}
+
+#imagenLogo{
+    width: 70px !important;
+}
+
+
+.toggle-switch .switch{
+    position: relative !important;
+    height: 22px !important;
+    width: 40px !important;
+    border-radius: 25px !important;
+    background-color: var(--toggle-color) !important;
+    transition: var(--tran-05) !important;
+}
+
+.switch::before{
+    content: '' !important;
+    position: absolute !important;
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+    top: 50% !important;
+    left: 5px !important;
+    transform: translateY(-50%) !important;
+    background-color: var(--sidebar-color) !important;
+    transition: var(--tran-04) !important;
+}
+
+body.dark .switch::before{
+    left: 20px !important;
+}
+
+.mode .sun-moon i{
+    position: absolute !important;
+}
+.mode .sun-moon i.sun{
+    opacity: 0 !important;
+}
+body.dark .mode .sun-moon i.sun{
+    opacity: 1 !important;
+}
+body.dark .mode .sun-moon i.moon{
+    opacity: 0 !important;
+}
+
+.mode .sun-moon{
+    height: 50px !important;
+    width: 60px !important;
+}
+
+
+
+.sidebar li{
+    height: 50px !important;
+    list-style: none !important;
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+}
+
+
+
+.sidebar .icon{
+    min-width: 60px !important;
+    border-radius: 6px !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+}
+
+.sidebar .text,
+.sidebar .icon{
+    color: var(--text-color) !important;
+    transition: var(--tran-03) !important;
+}
+
+.sidebar .text{
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    opacity: 1 !important;
+}
+
+
+
+
+
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+
+
+.sidebar.close .toggle{
+    transform: translateY(-50%) rotate(0deg) !important;
+}
+
+
+
+.sidebar li.search-box{
+    border-radius: 6px !important;
+    background-color: var(--primary-color-light) !important;
+    cursor: pointer !important;
+    transition: var(--tran-05) !important;
+}
+
+.sidebar li a{
+    list-style: none !important;
+    height: 100% !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    transition: var(--tran-03) !important;
+}
+
+
+.sidebar .menu-bar{
+    height: calc(100% - 55px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    overflow-y: scroll !important;
+}
+
+input::-webkit-scrollbar{
+    display: none !important;
+}
+
+.menu-bar::-webkit-scrollbar{
+    display: none !important;
+}
+.sidebar  .mode{
+    border-radius: 6px !important;
+    background-color: var(--primary-color-light) !important;
+    position: relative !important;
+    transition: var(--tran-05) !important;
+}
+.menu-bar .bottom-content .toggle-switch{
+    position: absolute !important;
+    right: 0 !important;
+    height: 100% !important;
+    min-width: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+}
+
+body.dark .letraLight{
+   color: white !important;
+}
+
+body.dark .contenedorDark{
+    background-color: black  !important;
+}
+
+body.dark a,h1,h2,h3,h4,button,p{
+    color: white !important;
+}
+
+.modo{
+    margin-right: 55px;
+}
